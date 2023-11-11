@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#27374D;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #526D82;
+    height: 3.2rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease all;
+}
+
+nav ul li a:hover{
+font-size: 1.05rem;
+color: #DDE6ED;
+}
+
+.left{
+    font-size: 1.4rem;
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.rightsection img{
+    width: 80%;
+}
+
+.leftsection{
+    font-size: 3rem;
+    width: 40%;
+    margin-left: 4rem;
+}
+
+.ncolor{
+    color: #8db0c7;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#element{
+    transition: all 2s ease;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #9DB2BF;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #DDE6ED;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #9DB2BF;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 0.1rem 0.1rem 20rem #9DB2BF;
+    color: #27374D;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+
+main hr{
+    border: 0;
+    height: 0.1rem;
+    background-color: #526D82;
+    margin: 2rem 5rem;
+}
+
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secondsection .rightsection{
+    width: 40%;
+    font-size: 1.1rem;
+}
+
+.secondsection .leftsection img{
+    width: 80%;
+}
+
+.techno{
+    margin: 2rem 0;
+}
+
+.techno h3{
+    color:  #DDE6ED;
+    text-align: center;
+}
+
+.technoimg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.technoimg img{
+    width: 4%;
+}
+
+.hr2{
+    border: 0;
+    height: 0.1rem;
+    background-color: #DDE6ED;
+    margin: 2rem 5rem; 
+}
+
+.thirdsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 165vh;
+}
+
+.proj1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.proj1 .rightsection{
+    width: 40%;
+}
+
+.proj1 .rightsection img{
+    border: 0.3rem solid #9DB2BF;
+    border-radius: 2rem;
+    width:70%;
+}
+
+
+.proj1 .leftsection{
+    font-size: 1.1rem;
+}
+
+.proj2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.proj2 .leftsection{
+    border-radius: 2rem;
+    width: 40%;
+}
+
+.proj2 .leftsection img{
+    border: 0.3rem solid #9DB2BF;
+    border-radius: 2rem;
+    width:70%;
+}
+
+
+.proj2 .rightsection{
+    font-size: 1.1rem;
+    width: 40%;
+}
+
+.proj3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.proj3 .rightsection{
+    border-radius: 2rem;
+    width: 40%;
+}
+
+.proj3 .rightsection img{
+    border: 0.3rem solid #9DB2BF;
+    border-radius: 2rem;
+    width:70%;
+}
+
+
+.proj3 .leftsection{
+    font-size: 1.1rem;
+}
+
+.fourthsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 25vh;
+    text-align: center;
+}
+
+.contimg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0;
+}
+.contimg a img{
+    width: 25%;
+}
+
+.contimg a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+    background-color: #526D82;
+}
