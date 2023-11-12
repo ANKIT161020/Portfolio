@@ -11,16 +11,17 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="left">Ankit's Portfolio</div>
             <div class="right">
-                <ul>
+                <ul id="hamburger-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
+            <img class="hamburger" onclick="myFunction()" src="./assets/hamburger.png" alt="hamburger">
         </nav>
     </header>
 
@@ -31,15 +32,19 @@
                 <div class="info">and I'm a Passionate</div>
                 <span id="element" class="ncolor"></span>
                 <br>
-                <button class="button type1">
-                    <span class="btn-txt">Download CV</span>
-                </button>
-                <button class="button type1">
-                    <span class="btn-txt">Visit Github</span>
-                </button>
+                <a href="/assets/CV.jpg" download="Ankit's CV">
+                    <button class="button type1">
+                        <span class="btn-txt">Download CV</span>
+                    </button>
+                </a>
+                <a href="https://github.com/ANKIT161020/" target="_blank">
+                    <button class="button type1">
+                        <span class="btn-txt">Visit Github</span>
+                    </button>
+                </a>
             </div>
             <div class="rightsection">
-                <img src="./assets/bg.png" alt="">
+                <img src="./assets/profile.png"  alt="profile_img">
             </div>
         </section>
         

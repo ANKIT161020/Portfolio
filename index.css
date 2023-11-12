@@ -17,7 +17,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: #526D82;
-    height: 3.2rem;
+    height: 7vh;
+    width: 99vw;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1;
 }
 
 nav ul{
@@ -28,7 +33,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    margin: 0 1.5rem;
+    margin: 0 1.55vw;
 }
 nav ul li a{
     text-decoration: none;
@@ -37,29 +42,43 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-font-size: 1.05rem;
+font-size: 1.05vmax;
 color: #DDE6ED;
 }
 
+.hamburger{
+    color: white;
+    display: none;
+}
+
 .left{
-    font-size: 1.4rem;
+    font-size: 2vmax;
 }
 
 .firstsection{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5rem 0;
+    margin: 12vh 0;
+}
+.firstsection a{
+    text-decoration: none;
+
 }
 
-.rightsection img{
-    width: 80%;
+.firstsection .rightsection img{
+    border: 10px solid hsl(206, 23%, 42%,0.3);
+    width: 20vw;
+    height: 60vh;
+    border-radius: 50%;
+    object-position: 0.5rem 2rem;
+    box-shadow: 2px 2px 10px  #1216184d;
 }
 
 .leftsection{
-    font-size: 3rem;
+    font-size: 3vw;
     width: 40%;
-    margin-left: 4rem;
+    margin-left: 5vw;
 }
 
 .ncolor{
@@ -73,8 +92,8 @@ color: #DDE6ED;
 }
 
 .button {
-    height: 50px;
-    width: 200px;
+    height: 7vh;
+    width: 14vw;
     position: relative;
     background-color: transparent;
     cursor: pointer;
@@ -151,6 +170,7 @@ main hr{
 .techno h3{
     color:  #DDE6ED;
     text-align: center;
+    font-size: 1.4vmax;
 }
 
 .technoimg{
@@ -271,4 +291,169 @@ footer{
     margin: auto;
     text-align: center;
     background-color: #526D82;
+}
+
+
+@media (max-width:430px) {
+    nav ul{
+        height: 30vh;
+        width: 100%;
+        display: block;
+        position: absolute;
+        background-color: #526D82;
+        text-align: center;
+        transform: translate(-62vw,30px);
+        border-bottom: 3px solid #27374D;
+        border-radius: 0 0 2rem 2rem;
+        box-shadow: 2rem 1rem 5rem #526D82;
+        display: none;
+    }
+
+    nav ul li{
+        border-bottom: 1px solid white;
+        margin: 4vh 6vh;
+        font-size:  1rem;
+        font-weight:bolder ;
+    }
+    
+    .hamburger{
+        display: block;
+        width: 6vw;
+    }
+
+    .firstsection{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .firstsection .rightsection img{
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .leftsection{
+        width: 80vw;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .button{
+        height: 4vh;
+        width: 25vw;
+    }
+
+    .btn-txt{
+        font-size: 2vw;
+    }
+
+    main hr{
+        margin: 2rem 2rem;
+    }
+
+    .secondsection{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 120vmin;
+    }
+
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .secondsection .rightsection{
+        width: 80vw;
+        font-size: 3.7vw;
+    }
+
+    .secondsection .leftsection img{
+        width: 65vw;
+    }
+
+    .hr2{
+        margin: 0.5rem 2rem;
+    }
+
+    .thirdsection{
+        flex-wrap: wrap;
+        height: 285vmin;
+    }
+
+    .proj1{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .proj1 .rightsection{
+        width: 50vw;
+    }
+
+    .proj1 .rightsection img{
+        border: 0.3rem solid #9DB2BF;
+        border-radius: 2rem;
+        width:50vw;
+    }
+    
+    .proj1 .leftsection{
+        margin-left: -3vw;
+        font-size: 3vw;
+    }
+
+    .proj2{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .proj2 .leftsection{
+        border-radius: 2rem;
+        width: 50vw;
+    }
+
+    .proj2 .leftsection img{
+        border: 0.3rem solid #9DB2BF;
+        border-radius: 2rem;
+        width:50vw;
+    }
+    
+    .proj2 .rightsection{
+        font-size: 3vw;
+        width: 80vw;
+    }
+    
+    .proj3{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .proj3 .rightsection{
+        border-radius: 2rem;
+        width: 50vw;
+    }
+
+    .proj3 .rightsection img{
+        border: 0.3rem solid #9DB2BF;
+        border-radius: 2rem;
+        width: 50vw;
+    }
+
+    .proj3 .leftsection{
+        font-size: 3vw;
+        margin-left: -3vw;
+    }
+
+    .proj4{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contimg a img{
+        width: 9vw;
+    }
+
+    .contimg a{
+        font-size: 1.5vw;
+    }
+    footer{
+        font-size: 2.5vw;
+    }
 }
